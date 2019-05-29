@@ -2,8 +2,10 @@ require 'pry'
 # same functionality but, 
 # - no more arguments
 # - no tests
+# - no more names, just number 
+# - the line is currently [254, 255] then next one 256
 
-def line(array)
+def line
 
   if array.empty?
     puts "The line is currently empty."
