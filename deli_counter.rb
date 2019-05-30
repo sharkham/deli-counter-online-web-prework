@@ -24,12 +24,12 @@ def take_a_number
 end 
   
 def now_serving
-  if array.empty?
+  if $array.empty?
     puts "There is nobody waiting to be served!"
   else 
-    customer = array[0]
+    customer = $array[0]
     puts "Currently serving #{customer}."
-    array.shift 
+    $array.shift 
   end 
 end 
   
