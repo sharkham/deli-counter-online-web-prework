@@ -5,13 +5,13 @@ require 'pry'
 # - no more names, just number 
 # - the line is currently [254, 255] then next one 256
 
-array = [254, 255]
+@@array = [254, 255]
 
 def line
-  if array.empty?
+  if @@array.empty?
     puts "The line is currently empty."
   else 
-    customer_line = array.map.each_with_index { |x, i| "#{i + 1}. #{x}" }
+    customer_line = @@array.map.each_with_index { |x, i| "#{i + 1}. #{x}" }
     puts "The line is currently: " << customer_line.join(" ")
   end 
 end 
