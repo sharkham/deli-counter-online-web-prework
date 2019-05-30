@@ -17,7 +17,7 @@ def line
 end 
 
 def take_a_number
-  string = array.last + 1 
+  string = $array.last + 1 
   $array.push(string)
   number_in_line = $array.index(string) + 1 
   puts "Welcome, #{string}. You are number #{number_in_line} in line."
