@@ -5,8 +5,9 @@ require 'pry'
 # - no more names, just number 
 # - the line is currently [254, 255] then next one 256
 
+array = [254, 255]
+
 def line
-  array = [254, 255]
   if array.empty?
     puts "The line is currently empty."
   else 
